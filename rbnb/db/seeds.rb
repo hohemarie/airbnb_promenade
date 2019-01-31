@@ -2,15 +2,15 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 100.times do |city|
-  City.create(city_name: Fake::Address.city_name)
+  City.create(city_name: Faker::Address.city_name)
 end
 
 100.times do |dogsitter|
-  Dogsitter.create(name: Fake::Name.name)
+  Dogsitter.create(name: Faker::Name.name)
 end
 
 100.times do |dog|
-  Dog.create(name: Fake::Name.name)
+  Dog.create(name: Faker::Name.name)
 end 
 # Examples:
 #
